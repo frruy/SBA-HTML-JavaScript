@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar with Dropdown Menu</title>
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Dropdown</a>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="content">
+  <h2>Contact Information</h2>
+  <p>You can contact us using the following methods:</p>
+  <ul>
+    <li>Email: info@example.com</li>
+    <li>Phone: +1 123-456-7890</li>
+    <li>Address: 123 Main Street, City, Country</li>
+  </ul>
+
+  <h2>Contact Form</h2>
+  <!-- Example of a text input -->
+  <form id="contact-form" action="#" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" pattern="[a-zA-Z\s'-]+" required>
+
+    <!-- Example of an email input -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4"></textarea><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar with Dropdown Menu</title>
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Dropdown</a>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="content">
+  <h2>Our Story</h2>
+  <p>In Spring Boot, a composed annotation is an annotation created by combining multiple existing annotations. This
+    allows you to create a single custom annotation that encapsulates the behavior of multiple annotations, making your
+    code cleaner and more expressive.</p>
+
+  <table style="margin-top: 40px">
+    <tr>
+      <th>Annotation</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>@TransactionalComponent</td>
+      <td>A composed annotation combining the behavior of <code>@Component</code> and <code>@Transactional</code>. It
+        can be used wherever you would normally use <code>@Component</code> or <code>@Transactional</code>.
+      </td>
+    </tr>
+    <tr>
+      <td>@SecureLogging</td>
+      <td>A composed annotation combining the behavior of <code>@Component</code> and adding secure logging
+        functionality. It ensures that sensitive log messages are encrypted before being logged.
+      </td>
+    </tr>
+    <tr>
+      <td>@CachingService</td>
+      <td>A composed annotation combining the behavior of <code>@Service</code> and <code>@Cacheable</code>. It marks a
+        service as cacheable, allowing method calls to be cached for improved performance.
+      </td>
+    </tr>
+  </table>
+
+  <iframe style="margin-top: 40px"
+          width="600" height="400"
+          src="https://www.youtube.com/embed/9SGDpanrc8U?si=zxu2RZtticor0kpm&amp;clip=UgkxUmQfUPC_IN-MsgsxodCiES0Z5R5PhrDO&amp;clipt=EK6VCRin4As"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+  </iframe>
+
+</section>
+
+<footer>
+  <p>&copy; 2024 Per Scholas</p>
+</footer>
+</body>
+</html>

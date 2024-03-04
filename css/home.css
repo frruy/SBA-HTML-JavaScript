@@ -1,0 +1,38 @@
+.slideshow-container {
+  position: relative;
+  max-width: 70%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the indicators */
+.indicators {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Style the active indicator */
+.active {
+  background-color: #555555;
+}
