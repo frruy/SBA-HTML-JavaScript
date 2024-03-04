@@ -33,3 +33,17 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #555;
 }
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
